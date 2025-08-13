@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import { X, ChefHat, Utensils, Clock, MapPin } from "lucide-react";
+import { X, ChefHat, Utensils, Clock } from "lucide-react";
 import { Button } from "./button";
+import Image from "next/image";
 
 interface ModalProps {
   isOpen: boolean;
@@ -298,9 +299,11 @@ export function MenuModal({
       <div className="space-y-6">
         {menuItem.image && (
           <div className="relative h-64 rounded-lg overflow-hidden">
-            <img
+            <Image
               src={menuItem.image}
               alt={menuItem.name}
+              width={600}
+              height={256}
               className="w-full h-full object-cover"
             />
             <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
@@ -322,7 +325,7 @@ export function MenuModal({
           <div className="flex items-center space-x-6 text-sm text-muted-foreground">
             <div className="flex items-center space-x-2">
               <Utensils className="w-4 h-4" />
-              <span>Chef's Special</span>
+              <span>Chef&apos;s Special</span>
             </div>
             <div className="flex items-center space-x-2">
               <Clock className="w-4 h-4" />
