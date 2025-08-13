@@ -1,0 +1,64 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="plateGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#F5F5F5"/>
+    </linearGradient>
+    <linearGradient id="breadGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D7CCC8"/>
+      <stop offset="100%" style="stop-color:#A1887F"/>
+    </linearGradient>
+    <linearGradient id="tomatoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F44336"/>
+      <stop offset="100%" style="stop-color:#D32F2F"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="#FFF8E1"/>
+  
+  <!-- Main plate -->
+  <circle cx="300" cy="200" r="120" fill="url(#plateGradient)" stroke="#8D6E63" stroke-width="3"/>
+  <circle cx="300" cy="200" r="110" fill="none" stroke="#A1887F" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Bruschetta -->
+  <rect x="200" y="150" width="80" height="20" fill="url(#breadGradient)" rx="5"/>
+  <rect x="205" y="155" width="70" height="10" fill="url(#tomatoGradient)" rx="3"/>
+  <circle cx="220" cy="160" r="8" fill="#4CAF50"/>
+  <circle cx="240" cy="160" r="6" fill="#66BB6A"/>
+  <circle cx="260" cy="160" r="7" fill="#4CAF50"/>
+  
+  <!-- Calamari -->
+  <ellipse cx="350" cy="180" rx="25" ry="8" fill="#8D6E63" transform="rotate(30 350 180)"/>
+  <ellipse cx="370" cy="190" rx="20" ry="6" fill="#6D4C41" transform="rotate(45 370 190)"/>
+  <ellipse cx="390" cy="200" rx="22" ry="7" fill="#8D6E63" transform="rotate(60 390 200)"/>
+  <ellipse cx="330" cy="200" rx="18" ry="5" fill="#6D4C41" transform="rotate(15 330 200)"/>
+  
+  <!-- Stuffed mushrooms -->
+  <ellipse cx="250" cy="250" rx="20" ry="15" fill="#8D6E63"/>
+  <ellipse cx="250" cy="250" rx="15" ry="10" fill="#6D4C41"/>
+  <ellipse cx="280" cy="260" rx="18" ry="12" fill="#8D6E63"/>
+  <ellipse cx="280" cy="260" rx="13" ry="8" fill="#6D4C41"/>
+  <ellipse cx="310" cy="255" rx="22" ry="14" fill="#8D6E63"/>
+  <ellipse cx="310" cy="255" rx="17" ry="11" fill="#6D4C41"/>
+  
+  <!-- Garnish -->
+  <path d="M 180 200 Q 200 180 220 200" stroke="#4CAF50" stroke-width="2" fill="none"/>
+  <path d="M 420 220 Q 440 200 460 220" stroke="#66BB6A" stroke-width="2" fill="none"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="150" cy="100" r="25" fill="#8D6E63" opacity="0.2"/>
+  <circle cx="450" cy="120" r="20" fill="#A1887F" opacity="0.2"/>
+  <circle cx="120" cy="300" r="15" fill="#6D4C41" opacity="0.2"/>
+  <circle cx="480" cy="320" r="18" fill="#8D6E63" opacity="0.2"/>
+  
+  <!-- Floating herbs -->
+  <path d="M 100 150 Q 120 130 140 150" stroke="#4CAF50" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M 460 180 Q 480 160 500 180" stroke="#66BB6A" stroke-width="1" fill="none" opacity="0.6"/>
+  
+  <!-- Small decorative circles -->
+  <circle cx="200" cy="100" r="3" fill="#8D6E63" opacity="0.4"/>
+  <circle cx="400" cy="80" r="4" fill="#A1887F" opacity="0.4"/>
+  <circle cx="500" cy="150" r="3" fill="#6D4C41" opacity="0.4"/>
+  <circle cx="100" cy="250" r="4" fill="#8D6E63" opacity="0.4"/>
+</svg> 
