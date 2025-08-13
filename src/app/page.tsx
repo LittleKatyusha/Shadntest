@@ -1,5 +1,5 @@
 import { MainNav } from "@/components/main-nav";
-import { Facebook, Twitter, Linkedin, Quote, MapPin, Phone, Mail, Clock, Star } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Quote, MapPin, Phone, Clock, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -13,6 +13,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { FloatingActionButton } from "@/components/ui/floating-action-button";
 import { ScrollToTop } from "@/components/ui/scroll-to-top";
 import { CulinaryStats } from "@/components/ui/stats";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -62,9 +63,11 @@ export default function Home() {
             <div className="grid lg:grid-cols-2 gap-20 items-center">
               <div className="lg:order-2 fade-in-up">
                 <div className="relative group">
-                  <img
+                  <Image
                     src="/images/about-culinary.svg"
                     alt="Tentang Kelezatan Kuliner"
+                    width={800}
+                    height={600}
                     className="w-full h-auto rounded-3xl shadow-2xl object-cover aspect-[4/3] transform group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -115,7 +118,13 @@ export default function Home() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <Card className="card-hover overflow-hidden border-0 bg-card/90 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-500 group">
                 <div className="relative overflow-hidden">
-                  <img src="/images/appetizers.svg" alt="Hidangan Pembuka" className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <Image 
+                    src="/images/appetizers.svg" 
+                    alt="Hidangan Pembuka" 
+                    width={400}
+                    height={256}
+                    className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110" 
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
                   <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
                     Populer
@@ -145,7 +154,13 @@ export default function Home() {
 
               <Card className="card-hover overflow-hidden border-0 bg-card/90 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-500 group">
                 <div className="relative overflow-hidden">
-                  <img src="/images/main-courses.svg" alt="Hidangan Utama" className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <Image 
+                    src="/images/main-courses.svg" 
+                    alt="Hidangan Utama" 
+                    width={400}
+                    height={256}
+                    className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110" 
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
                   <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
                     Pilihan Chef
@@ -175,7 +190,13 @@ export default function Home() {
 
               <Card className="card-hover overflow-hidden border-0 bg-card/90 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-500 group">
                 <div className="relative overflow-hidden">
-                  <img src="/images/desserts.svg" alt="Hidangan Penutup" className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <Image 
+                    src="/images/desserts.svg" 
+                    alt="Hidangan Penutup" 
+                    width={400}
+                    height={256}
+                    className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110" 
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
                   <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
                     Hidangan Manis
@@ -230,7 +251,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="prose-culinary text-muted-foreground italic leading-relaxed">
-                    "Benar-benar luar biasa! Setiap hidangan adalah mahakarya, penuh dengan rasa. Permata kuliner sejati!"
+                    &ldquo;Benar-benar luar biasa! Setiap hidangan adalah mahakarya, penuh dengan rasa. Permata kuliner sejati!&rdquo;
                   </p>
                 </CardContent>
               </Card>
@@ -249,7 +270,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="prose-culinary text-muted-foreground italic leading-relaxed">
-                    "Pengalaman makan terbaik yang pernah saya alami dalam beberapa tahun. Pelayanannya sempurna, dan makanannya luar biasa."
+                    &ldquo;Pengalaman makan terbaik yang pernah saya alami dalam beberapa tahun. Pelayanannya sempurna, dan makanannya luar biasa.&rdquo;
                   </p>
                 </CardContent>
               </Card>
@@ -268,7 +289,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="prose-culinary text-muted-foreground italic leading-relaxed">
-                    "Culinary Delights melayani acara kami, dan itu sukses besar! Tamu kami memuji makanan. Sangat direkomendasikan!"
+                    &ldquo;Culinary Delights melayani acara kami, dan itu sukses besar! Tamu kami memuji makanan. Sangat direkomendasikan!&rdquo;
                   </p>
                 </CardContent>
               </Card>
